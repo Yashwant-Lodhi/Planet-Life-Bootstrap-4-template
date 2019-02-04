@@ -1,2 +1,2 @@
 # Planet-Life-Bootstrap-4
-<p> Demo : https://yashwantlodhi.com/planet-life/ </p>
+<p> Demo : <a href="https://yashwantlodhi.com/planet-life/" target="_blank">Planet Life</a> </p>
