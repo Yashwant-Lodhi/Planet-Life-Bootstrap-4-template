@@ -78,6 +78,15 @@ body {
     background-color: #7ed56f;
 }
 
+.wave {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+}
+
 #services {
     margin: 5% 0;
     padding: 4% 0;
@@ -125,8 +134,44 @@ body {
 
 }
 
+#products {
+    background: linear-gradient(to left, #55c57a, #28b485);
+    margin: 5% 0;
+    padding: 4% 0;
+}
+#products h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #products h1 {
+        font-size: 1.7rem;
+        margin-top: 40px;
+    }
+}
+
+#products .line {
+    width: 300px;
+    height: 10px;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    margin: -10px 0;
+}
+
+@media (max-width: 1000px) {
+    .card-footer a {
+        margin-top: 10px;
+    }
+}
+
 #about {
-    background-color: #e1e5e8;
     margin: 5% 0;
     padding: 4% 0;
 }
@@ -137,6 +182,13 @@ body {
     margin-bottom: 20px;
     color: #28b485;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    #about h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
 }
 #about .line {
     width: 300px;
@@ -153,6 +205,13 @@ body {
 #about .about-img {
     margin-left: 100px;
     margin-top: 10px;
+    border: 5px solid #28b485;
+    padding: 5px;
+    transition: .5s;
+}
+
+#about .about-img:hover {
+    transform: translateY(-5px);
 }
 
 #about ul {
@@ -170,22 +229,25 @@ body {
 #testimonials {
     margin: 5% 0;
     padding: 4% 0;
-    /*background: linear-gradient(to left, #55c57a, #28b485);*/
+    background: linear-gradient(to left, #55c57a, #28b485);
 
 }
 #testimonials h1 {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    color: #28b485;
+    color: #fff;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 10px 0 20px;
+	margin: 30px 0 20px;
 }
 #testimonials .line {
     width: 300px;
     height: 10px;
     margin-bottom: 50px;
+}
+.testimonial {
+    color: #000;
 }
 
 .col-center {
@@ -221,11 +283,12 @@ body {
 	padding: 30px 0 10px;
 }
 .carousel .overview {	
-	font-style: italic;
+    font-style: italic;
+    color: #000;
 }
 .carousel .overview b {
 	text-transform: uppercase;
-	color: #7AA641;
+	color: rgb(201, 240, 95);
 }
 .carousel .carousel-control {
 	width: 40px;
@@ -249,6 +312,26 @@ body {
 .carousel-indicators li {	
 	background: #999;
 }
+.social-icon h1 {
+    color: #28b485;
+    margin-top: 50px;
+}
+
+.social-icon .line {
+    width: 300px;
+    height: 10px;
+    margin-bottom: 50px;
+}
+.social-icon a i {
+    font-size: 2rem;
+    color: #28b485;
+    transition: .5s;
+}
+.social-icon a i:hover {
+    transform: translateY(-3px);
+    color: #000;
+}
+
 
 #footer {
     background: rgb(66, 63, 63);
@@ -280,4 +363,10 @@ body {
     text-align: center;
     font-weight: 700;
     color: #000;
+}
+.copyright a {
+    color: rgb(27, 27, 27);
+}
+.copyright a:hover {
+    color: #fff;
 }
