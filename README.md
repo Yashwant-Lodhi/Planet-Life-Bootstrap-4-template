@@ -9,5 +9,3 @@
   <li>Google Fonts</li>
   <li>Fontawesome</li>
 </ul>
-
-test
